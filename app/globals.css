@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+  }
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-zoom {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0.6) 25%, transparent 70%);
+}
+
+/* Premium Selection Color to match the landing page's teal/cyan glow */
+*::selection {
+  background: rgba(20, 184, 166, 0.4) !important;
+  /* Teal shade */
+  color: #ffffff !important;
+}
+
+*::-moz-selection {
+  background: rgba(20, 184, 166, 0.4) !important;
+  color: #ffffff !important;
+}
