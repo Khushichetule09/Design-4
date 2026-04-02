@@ -57,9 +57,9 @@ export default function Home() {
         {/* Left Side - Content */}
         <div className="w-full md:w-1/2 flex flex-col justify-center px-6 pt-32 pb-20 md:px-12 lg:px-24">
           <div className="max-w-xl space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal leading-[1.1] tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white">
               Unleash, outrun, and dominate your market
-              <span className="block text-zinc-500">with AI that never stops.</span>
+              <span className="block text-zinc-500 font-semibold">with AI that never stops.</span>
             </h1>
 
             <div className="space-y-4 max-w-md">
