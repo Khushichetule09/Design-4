@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sora: var(--font-sora);
+  --font-inter: var(--font-inter);
+}
+
 @layer base {
   body {
-    @apply bg-black text-white antialiased;
+    @apply bg-black text-white antialiased font-inter;
   }
 }
 
@@ -21,7 +26,11 @@
 }
 
 .hero-overlay {
-  background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0.6) 25%, transparent 70%);
+  background: linear-gradient(to right,
+      #000000 0%,
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(0, 0, 0, 0.4) 30%,
+      transparent 100%);
 }
 
 /* Premium Selection Color to match the landing page's teal/cyan glow */
